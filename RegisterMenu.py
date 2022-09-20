@@ -4,11 +4,11 @@ from CreateEmployee import CreateEmployee
 # from delete import Delete
     
 def dataMenu():
-    print('Opções Disponíveis: C = Cadastros, R = Relatórios, S = Sair')
+    print('\nEscolha uma Opção: C = Cadastros, R = Relatórios, S = Sair')
     choice = input('Digite a sua opção = ')
 
     if choice == 'C':
-        createObj = CreateEmployee()
+        createObj = CreateEmployee
         createObj.createData()
     elif choice == 'R':
         readObj =  Read()

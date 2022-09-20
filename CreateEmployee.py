@@ -1,7 +1,7 @@
 import DataBaseConnection as db
-import model.Employee as employee
+import model.Employee as Employee
 from util.Message import Message as message 
-
+ 
 cpf = str
 name = str
 salary = float
@@ -16,12 +16,10 @@ class CreateEmployee:
       
       if checkEmptyData():
          return 
-       
-      employee.Employee(cpf, name, salary)
-        
+
       try:
         sql = "INSERT INTO employee (cpf, name, salary) VALUES (%s, %s, %s)"
-        data = (employee.cpf, employee.name, employee.salary)
+        data = ("0123", "catatau", 1500)
         cursor.execute(sql, data)
         db.connection.commit()
         cursor.close()
