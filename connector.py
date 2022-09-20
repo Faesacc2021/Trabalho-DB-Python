@@ -1,5 +1,4 @@
 import DataBaseConnection as db
-    
 
 if db.connection.is_connected():
         
