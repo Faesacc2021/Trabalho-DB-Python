@@ -17,6 +17,5 @@ def dataMenu():
         quit()
     else:
         print('Opção inválida, Escolha novamente')
-        dataMenu()
-
+    dataMenu()
 dataMenu()

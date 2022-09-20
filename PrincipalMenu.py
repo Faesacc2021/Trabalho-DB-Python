@@ -19,5 +19,4 @@ def main():
     else:
         print('Opção inválida, Escolha novamente')
         main()
-
-main()
+    main()
