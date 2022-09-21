@@ -1,8 +1,7 @@
-from RegisterMenu import dataMenu
-# from update import Update
-# from delete import Delete
-    
-def main():
+from util.Message import Message
+message = Message.showMessage
+   
+def menuPrincipal():
     print('\nMENU PRINCIPAL')
     print('C = Cadastros')
     print('R = Relatórios')
@@ -10,13 +9,14 @@ def main():
     choice = input('Digite a sua opção = ')
 
     if choice == 'C':
+        from RegisterMenu import dataMenu
         dataMenu()
     elif choice == 'R':
-        readObj =  Read()
-        readObj.func_ReadData()
+        # To do
+        "implantar chada menu de relatorios"
     elif choice == 'S':
         quit()
     else:
-        print('Opção inválida, Escolha novamente')
-        main()
-    main()
+        message('Opção inválida, Escolha novamente', '')
+    menuPrincipal()            
+menuPrincipal()

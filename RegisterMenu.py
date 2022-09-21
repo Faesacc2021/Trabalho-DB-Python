@@ -1,21 +1,15 @@
-from CreateEmployee import CreateEmployee
-# from create import Create
-# from update import Update
-# from delete import Delete
-    
 def dataMenu():
     print('\nEscolha uma Opção: C = Cadastros, R = Relatórios, S = Sair')
     choice = input('Digite a sua opção = ')
-
     if choice == 'C':
-        createObj = CreateEmployee
-        createObj.createData()
+       from CreateEmployee import CreateEmployee
+       CreateEmployee.createData()
     elif choice == 'R':
-        readObj =  Read()
-        readObj.func_ReadData()
+        ""
     elif choice == 'S':
         quit()
     else:
         print('Opção inválida, Escolha novamente')
+        dataMenu()    
     dataMenu()
-dataMenu()
+dataMenu()    
