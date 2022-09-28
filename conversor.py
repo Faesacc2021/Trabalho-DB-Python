@@ -1,5 +1,3 @@
 {
 	"folders": []
 }
-
-print('Franz')

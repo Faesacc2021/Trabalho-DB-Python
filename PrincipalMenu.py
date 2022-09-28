@@ -1,4 +1,5 @@
 from util.Message import Message
+from RegisterMenu import dataMenu
 message = Message.showMessage
    
 def menuPrincipal():
@@ -9,7 +10,6 @@ def menuPrincipal():
     choice = input('Digite a sua opção = ')
 
     if choice == 'C':
-        from RegisterMenu import dataMenu
         dataMenu()
     elif choice == 'R':
         # To do

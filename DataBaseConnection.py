@@ -1,12 +1,11 @@
 import mysql.connector
 from mysql.connector import Error
 from util.Message import Message as message 
-
 try:
     connection = mysql.connector.connect(host='localhost',
                                                 database='beautysalon',
                                                 user='root',
-                                                password='BancoDados2022')
+                                                password='159630zeust12')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         message.showMessage("Conectado no Servidor MySQL versão ", db_Info)
