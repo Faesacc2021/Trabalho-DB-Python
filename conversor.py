@@ -1,3 +1,5 @@
 {
 	"folders": []
 }
+
+print('Franz')
