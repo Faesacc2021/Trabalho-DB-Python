@@ -5,6 +5,6 @@ app = Flask(__name__)
 @app.route('/service/', methods=['POST'])
 def service():
     data = request.json()
-    print(data)
+    return data
   
 app.run("http://localhost/service", debug=True)
