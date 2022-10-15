@@ -24,7 +24,7 @@ function sendJSON(){
     };
 
     // Converting JSON data to string
-    var data = JSON.stringify({ "name": name.value, "email": email.value });
+    var data = JSON.stringify({ "descriptionAcce": name.value, "email": email.value });
 
     // Sending data with the request
     xhr.send(data);
